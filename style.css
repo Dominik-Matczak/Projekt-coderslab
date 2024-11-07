@@ -432,3 +432,36 @@
 .pricing-card:last-child a{
     background: #55DFB4;
 }
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+
+.pricing-card-professional h4{
+    font-size: 21px;
+}
+
+.pricing-card span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    color: #55DFB4;
+}
+
+.pricing-card p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.basic-card span{
+    color: #FB3B64;
+}
+
+.pricing-card-professional span{
+    color: #07ACE6
+}
