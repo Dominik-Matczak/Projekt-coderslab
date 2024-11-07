@@ -66,6 +66,8 @@
 }
 
 .header-content-top a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     margin-top: 60px;
     color: #fff;
     text-decoration: none;
@@ -182,6 +184,7 @@
 .container{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background: #fff;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -202,7 +205,7 @@
     position: relative;
 }
 
-.container-content:after{
+.container-content:first-child:after{
     content: '';
     position: absolute;
     top: 250px;
@@ -232,21 +235,200 @@
     margin: 38px 71px 38px 0;
 }
 
-.container-image img{
-    width: 386px;
-    height: 219px;
+.container-image img,
+.container-image2 img{
     z-index: 1;
 }
 
-.container-image:after{
+.container-image:last-child:after{
     z-index: 0;
     position: absolute;
     content: "";
-    top: 25px;
+    top: 0;
     left: 250px;
     width: 180px;
     height: 180px;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     background-color: #FB3B64;
     border-radius: 41px;
+}
+
+.second-article h2{
+    margin-top: 69px;
+    max-width: 246px;
+}
+
+.second-article p{
+    margin-right: 20px;
+}
+
+.container-content:nth-child(2):after{
+    content: '';
+    position: absolute;
+    top: 290px;
+    left: 0;
+    width: 328px;
+    height: 4px;
+    background-color: #08A6E4;
+}
+
+.container-image:first-child{
+    margin: 29px 0 0 70px;
+    position: relative;
+}
+
+.container-image:first-child:after{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 320px;
+    width: 320px;
+    background-color: #07ACE6;
+    border-radius: 50%;
+}
+
+.container:nth-child(2){
+    margin-bottom: 38px;
+}
+
+.divided-container{
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    width: 1124px;
+    margin-bottom: 105px;
+}
+
+.divided-container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 623px;
+    height: 370px;
+    background: #fff;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    position:relative;
+}
+
+.divided-container-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 370px;
+    background-color: #55DFB4;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.divided-container-image img{
+    margin-top: 40px;
+}
+
+.divided-container-content h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    max-width: 348px;
+    margin-left: 35px;
+}
+
+.divided-container-content p{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    max-width: 553px;
+    margin-left: 35px;
+}
+
+.divided-container-content:after {
+    content: '';
+    position: absolute;
+    top: 290px;
+    left: 35px;
+    width: 328px;
+    height: 4px;
+    background-color: #55DFB4;
+}
+
+/* Pricing page section */
+
+.page-pricing-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+
+.pricing-content{
+    height: 616px;
+}
+
+.pricing-content h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.pricing-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 59px;
+}
+
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 372px;
+    height: 461px;
+    border-radius: 18px;
+    position: relative;
+}
+
+.pricing-card:first-child{
+    border: 1px solid #FB3B64;
+}
+
+.pricing-card:nth-child(2){
+    width: 405px;
+    height: 500px;
+    border: 1px solid #07ACE6;
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing-card:last-child{
+    border: 1px solid #55DFB4;
+}
+
+.pricing-card a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 57px;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.pricing-card:first-child a{
+    background: #FB3B64;
+}
+
+.pricing-card:nth-child(2) a{
+    background: #07ACE6;
+}
+
+.pricing-card:last-child a{
+    background: #55DFB4;
 }
